@@ -63,6 +63,7 @@ html.lenis body {
   overflow: hidden;
 }
 
+@layer components {
 .font-serif {
   font-family: var(--font-serif), "Source Serif 4", Georgia, serif;
   font-feature-settings: "lnum", "kern";
@@ -263,6 +264,7 @@ html.lenis body {
 .btn-magnetic.on-ivory:hover,
 .btn-magnetic.on-ivory:focus-visible {
   color: #f8fafc;
+}
 }
 
 /* Reveal baseline */

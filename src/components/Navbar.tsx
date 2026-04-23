@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
@@ -15,8 +16,12 @@ const navItems = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const darkHero = pathname === "/";
+  const overDark = darkHero && !scrolled;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -51,7 +56,10 @@ export function Navbar() {
               width={311}
               height={153}
               priority
-              className="h-12 md:h-14 w-auto transition-opacity duration-500 group-hover:opacity-80"
+              className={cn(
+                "h-12 md:h-14 w-auto transition-all duration-500 group-hover:opacity-80",
+                overDark && "invert opacity-95",
+              )}
             />
           </Link>
 
@@ -60,7 +68,10 @@ export function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="link-underline text-[13px] tracking-wide text-navy/80 hover:text-navy font-medium"
+                className={cn(
+                  "link-underline text-[13px] tracking-wide font-medium transition-colors duration-500",
+                  overDark ? "text-ivory/85 hover:text-ivory" : "text-navy/80 hover:text-navy",
+                )}
               >
                 {item.label}
               </Link>
@@ -69,7 +80,10 @@ export function Navbar() {
 
           <Link
             href="/kontakt"
-            className="hidden lg:inline-flex label text-navy link-underline link-underline-reverse"
+            className={cn(
+              "hidden lg:inline-flex label link-underline link-underline-reverse transition-colors duration-500",
+              overDark ? "text-ivory" : "text-navy",
+            )}
           >
             Erstgespräch anfragen
           </Link>
@@ -79,7 +93,10 @@ export function Navbar() {
             aria-label={open ? "Menü schließen" : "Menü öffnen"}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
-            className="lg:hidden inline-flex items-center justify-center w-10 h-10 text-navy"
+            className={cn(
+              "lg:hidden inline-flex items-center justify-center w-10 h-10 transition-colors duration-500",
+              overDark ? "text-ivory" : "text-navy",
+            )}
           >
             {open ? <X size={22} /> : <Menu size={22} />}
           </button>

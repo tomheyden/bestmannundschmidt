@@ -28,6 +28,25 @@ const haltung = [
   },
 ];
 
+const arbeitsweise = [
+  {
+    t: "Strukturiert statt impulsiv.",
+    d: "Ich arbeite mit klarem Vorgehen — nicht mit schneller Reaktion. Struktur gibt Halt, auch wenn das Thema emotional wird.",
+  },
+  {
+    t: "Klar statt interpretativ.",
+    d: "Ich höre genau hin und benenne, was ich wahrnehme. Keine Deutung von oben, sondern Rückmeldung auf Augenhöhe.",
+  },
+  {
+    t: "Empathisch, aber nicht wertend.",
+    d: "Menschen begegnen mir unterschiedlich — und jede Seite hat ihre Gründe. Ich halte Raum, ohne Partei zu ergreifen.",
+  },
+  {
+    t: "Lösungsorientiert statt problemzentriert.",
+    d: "Verstehen ist wichtig — aber nicht das Ziel. Ziel ist, wieder handlungsfähig zu werden.",
+  },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -41,10 +60,13 @@ export default function AboutPage() {
             <h1 className="col-span-12 lg:col-span-10 display-1 text-navy">
               Klarheit entsteht durch Erfahrung und Haltung.
             </h1>
-            <div className="col-span-12 md:col-span-5 md:col-start-8 mt-6">
+            <div className="col-span-12 md:col-span-5 md:col-start-8 mt-6 flex flex-col gap-6">
               <p className="lede">
                 Seit über 25 Jahren begleite ich Menschen in herausfordernden Kommunikations- und Konfliktsituationen
                 — als Coach, Trainerin, Mediatorin und Beraterin.
+              </p>
+              <p className="label text-navy/55">
+                Für Führungskräfte · Teams · Organisationen · Unternehmen im Wandel
               </p>
             </div>
           </div>
@@ -79,6 +101,47 @@ export default function AboutPage() {
         ]}
         quote="Ich liebe meine Arbeit — nicht im lauten, sondern im tiefen Sinn: Weil sie Menschen wieder miteinander ins Gespräch bringt."
       />
+
+      <section className="py-24 md:py-32 bg-ivory">
+        <div className="container-editorial">
+          <div className="grid grid-cols-12 gap-6 mb-12 md:mb-16">
+            <div className="col-span-12 md:col-span-5 flex flex-col gap-5">
+              <div className="flex items-center gap-4">
+                <span className="h-px w-8 bg-navy/40" />
+                <span className="label text-navy/65">Arbeitsweise</span>
+              </div>
+              <h2 className="display-2 text-navy">Wie ich arbeite.</h2>
+            </div>
+            <div className="col-span-12 md:col-span-6 md:col-start-7 self-end">
+              <p className="prose-editorial">
+                <span>
+                  Was mich auszeichnet, ist die Verbindung aus Erfahrung, Klarheit und echter Zugewandtheit. Vier
+                  Prinzipien prägen, wie ich im Gespräch, im Coaching und in der Mediation vorgehe.
+                </span>
+              </p>
+            </div>
+          </div>
+
+          <dl>
+            {arbeitsweise.map((item, i) => (
+              <div
+                key={item.t}
+                className="grid grid-cols-12 gap-6 rule-top py-8 last:border-b last:border-navy/15"
+              >
+                <dt className="col-span-12 md:col-span-6 flex items-baseline gap-5">
+                  <span className="section-index tabular-nums pt-1">
+                    {String(i + 1).padStart(2, "0")}
+                  </span>
+                  <span className="display-3 text-navy">{item.t}</span>
+                </dt>
+                <dd className="col-span-12 md:col-span-5 md:col-start-8 text-[15px] leading-relaxed text-slate-detail/90 max-w-lg">
+                  {item.d}
+                </dd>
+              </div>
+            ))}
+          </dl>
+        </div>
+      </section>
 
       <section id="haltung" className="py-24 md:py-32 bg-paper">
         <div className="container-editorial">
