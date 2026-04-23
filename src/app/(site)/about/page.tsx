@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { ContentSection } from "@/components/ContentSection";
 import { CTASection } from "@/components/CTASection";
-import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Über mich",
@@ -73,26 +72,12 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="pb-20 md:pb-28">
-        <div className="container-editorial">
-          <figure className="relative aspect-16/10 w-full overflow-hidden bg-navy/5">
-            <Image
-              src="/karenbestmann.jpg"
-              alt="Karen Bestmann"
-              fill
-              sizes="(min-width: 1440px) 1280px, (min-width: 768px) 92vw, 100vw"
-              className="object-cover"
-            />
-          </figure>
-        </div>
-      </section>
-
       <ContentSection
         eyebrow="Meine Arbeit"
         heading="Ich arbeite mit Menschen — nicht mit Konzepten."
         align="image-right"
-        imageLabel="Gespräch"
-        imageAspect="portrait"
+        imageSrc="/karenbestmannportait.jpeg"
+        imageAlt="Karen Bestmann"
         tone="ivory"
         body={[
           "Im Laufe der Jahre hat sich meine Arbeit immer weiter verdichtet: Es geht nicht um Methoden allein — es geht um das, was zwischen Menschen geschieht, wenn Kommunikation schwierig wird.",

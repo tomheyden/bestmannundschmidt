@@ -3,6 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ContentSection } from "@/components/ContentSection";
 import { CTASection } from "@/components/CTASection";
 import { ImageFallback } from "@/components/ImageFallback";
+import { Anchor, Compass, MessageSquare, Scale, Users, type LucideIcon } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Training & Beratung",
@@ -10,26 +11,33 @@ export const metadata: Metadata = {
     "Training & Beratung bei Karen Bestmann — Kommunikation im Team stärken, Konfliktkompetenz entwickeln, Zusammenarbeit wirksam gestalten.",
 };
 
-const schwerpunkte = [
+type Schwerpunkt = { t: string; d: string; icon: LucideIcon };
+
+const schwerpunkte: Schwerpunkt[] = [
   {
     t: "Kommunikation im Team.",
     d: "Klar und wertschätzend miteinander sprechen — auch dann, wenn es anspruchsvoll wird. Grundlagen, Formate, Rituale.",
+    icon: Users,
   },
   {
     t: "Konfliktkompetenz.",
     d: "Konflikte früh erkennen, ansprechen und führen — statt sie zu umgehen, bis sie eskalieren. Für Führungskräfte und Teams.",
+    icon: Scale,
   },
   {
     t: "Zusammenarbeit & Führung.",
     d: "Rollen klären, Erwartungen abgleichen, Entscheidungen gemeinsam tragen. Die Grundlage für verlässliche Zusammenarbeit.",
+    icon: Compass,
   },
   {
     t: "Resilienz.",
     d: "Belastbarkeit im beruflichen Alltag — individuell und als Team. Was trägt, was erschöpft, was nährt?",
+    icon: Anchor,
   },
   {
     t: "Gesprächsführung.",
     d: "Schwierige Gespräche souverän führen: Feedback, Kritik, Entwicklung, Trennung. Struktur und Haltung für den Ernstfall.",
+    icon: MessageSquare,
   },
 ];
 
@@ -80,18 +88,27 @@ export default function BeratungPage() {
               </p>
             </div>
           </div>
-          <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-6">
-            {schwerpunkte.map((item, i) => (
-              <li key={item.t} className="rule-top-ivory py-7 flex flex-col gap-3">
-                <div className="flex items-baseline gap-4">
-                  <span className="section-index text-ivory/55 tabular-nums">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <span className="display-3 text-ivory">{item.t}</span>
-                </div>
-                <p className="text-[15px] text-ivory/75 leading-relaxed pl-10 max-w-lg">{item.d}</p>
-              </li>
-            ))}
+          <ul className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+            {schwerpunkte.map((item, i) => {
+              const Icon = item.icon;
+              return (
+                <li
+                  key={item.t}
+                  className="group relative flex flex-col gap-6 p-8 md:p-9 bg-ivory/[0.025] border border-ivory/10 transition-colors duration-500 hover:bg-ivory/[0.045] hover:border-ivory/25"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="inline-flex items-center justify-center w-12 h-12 rounded-full border border-ivory/25 text-ivory/80 transition-colors duration-500 group-hover:border-ivory/55 group-hover:text-ivory">
+                      <Icon size={20} strokeWidth={1.4} />
+                    </span>
+                    <span className="section-index text-ivory/45 tabular-nums">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                  </div>
+                  <h3 className="display-3 text-ivory">{item.t}</h3>
+                  <p className="text-[15px] text-ivory/70 leading-relaxed max-w-md">{item.d}</p>
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
