@@ -50,7 +50,7 @@ export function LandingHero() {
           variants={fadeUp}
           className="serif-display text-ivory text-[clamp(2.25rem,5.6vw,5.25rem)] leading-[1.05] tracking-[-0.02em] max-w-[22ch]"
         >
-          Klarheit in Konflikten. Stärke in Kommunikation. Wirkung in Zusammenarbeit.
+          Klarheit in Konflikten.<br />Stärke in Kommunikation.<br />Wirkung in Zusammenarbeit.
         </motion.h1>
 
         <motion.p
