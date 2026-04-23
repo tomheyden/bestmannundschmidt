@@ -16,26 +16,39 @@ export default function ImpressumPage() {
           <div className="col-span-12 md:col-span-8 mt-12 flex flex-col gap-10 prose-editorial">
             <div>
               <h2 className="display-3 text-navy mb-3">Anbieter</h2>
-              <p>Bestmann & Schmidt Partnerschaft mbB<br />Alsterufer 12<br />20354 Hamburg</p>
-            </div>
-            <div>
-              <h2 className="display-3 text-navy mb-3">Vertreten durch</h2>
-              <p>Dr. Ada Bestmann · Henrik Schmidt</p>
+              <p>
+                Karen Bestmann<br />
+                Coaching · Mediation · Training<br />
+                Musterstraße 00<br />
+                20000 Hamburg
+              </p>
             </div>
             <div>
               <h2 className="display-3 text-navy mb-3">Kontakt</h2>
               <p>
-                Telefon: +49 40 / 000 000<br />
-                E-Mail: kontakt@bestmann-schmidt.de
+                Telefon: +49 (0)40 · 000 000<br />
+                E-Mail: kontakt@karenbestmann.de<br />
+                Web: karenbestmann.de
               </p>
             </div>
             <div>
-              <h2 className="display-3 text-navy mb-3">Registereintrag</h2>
-              <p>Partnerschaftsregister beim Amtsgericht Hamburg · PR 0000</p>
+              <h2 className="display-3 text-navy mb-3">Umsatzsteuer-ID</h2>
+              <p>Gemäß §27a Umsatzsteuergesetz: DE000000000</p>
             </div>
             <div>
               <h2 className="display-3 text-navy mb-3">Verantwortlich für den Inhalt</h2>
-              <p>Dr. Ada Bestmann, Adresse wie oben.</p>
+              <p>Karen Bestmann, Anschrift wie oben.</p>
+            </div>
+            <div>
+              <h2 className="display-3 text-navy mb-3">Streitschlichtung</h2>
+              <p>
+                Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit:
+                <br />
+                https://ec.europa.eu/consumers/odr
+                <br />
+                Ich bin nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer
+                Verbraucherschlichtungsstelle teilzunehmen.
+              </p>
             </div>
           </div>
         </div>

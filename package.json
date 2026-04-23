@@ -1,17 +1,17 @@
 {
-  "name": "bestmannundschmidt",
+  "name": "karenbestmann",
   "version": "0.1.0",
   "private": true,
-  "description": "Website for Bestmann & Schmidt — specialists for Mediation & Management Consulting. Next.js 16 (App Router), TypeScript, Tailwind CSS v4.",
+  "description": "Website für Karen Bestmann — Coaching, Mediation und Training. Next.js 16 (App Router), TypeScript, Tailwind CSS v4.",
   "keywords": [
     "nextjs",
     "typescript",
     "tailwindcss",
+    "coaching",
     "mediation",
-    "consulting",
-    "editorial"
+    "training"
   ],
-  "author": "Bestmann & Schmidt",
+  "author": "Karen Bestmann",
   "license": "UNLICENSED",
   "engines": {
     "node": ">=20.0.0"

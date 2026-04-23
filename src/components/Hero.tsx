@@ -26,16 +26,16 @@ const fadeUp = {
 };
 
 export function Hero({
-  eyebrow = "Bestmann & Schmidt · Seit 2007",
-  headline = "Nachhaltige Leistungssteigerung durch menschliche Klärung.",
-  description = "Specialists for Mediation & Management Consulting. Wir begleiten Führungskräfte und Organisationen dort, wo Sachfragen auf Beziehungsfragen treffen.",
-  imageLabel = "Studio · Hamburg",
+  eyebrow = "Karen Bestmann · Coaching · Mediation · Training",
+  headline = "Klarheit in Konflikten. Stärke in Kommunikation. Wirkung in Zusammenarbeit.",
+  description = "Mediation, Coaching und Kommunikation für Führungskräfte, Teams und Organisationen. Über 25 Jahre Erfahrung — mit einem Kompass: Menschlichkeit.",
+  imageLabel = "Hamburg",
   imageSrc,
   imageAlt,
   meta = [
-    { label: "Standorte", value: "Hamburg · Wien · Zürich" },
-    { label: "Mandate seit", value: "2007" },
-    { label: "Sprachen", value: "DE · EN · FR" },
+    { label: "Erfahrung", value: "25+ Jahre" },
+    { label: "Tätig in", value: "Hamburg & remote" },
+    { label: "Sprachen", value: "Deutsch · Englisch" },
   ],
 }: HeroProps) {
   return (

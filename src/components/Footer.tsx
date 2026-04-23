@@ -3,29 +3,27 @@ import Image from "next/image";
 
 const navGroups = [
   {
-    title: "Leistungen",
+    title: "Angebote",
     links: [
-      { label: "Mediation", href: "/mediation" },
       { label: "Coaching", href: "/coaching" },
-      { label: "Beratung", href: "/beratung" },
-      { label: "Team-Entwicklung", href: "/beratung#team" },
+      { label: "Training & Beratung", href: "/beratung" },
+      { label: "Mediation", href: "/mediation" },
     ],
   },
   {
-    title: "Haus",
+    title: "Praxis",
     links: [
-      { label: "Über uns", href: "/about" },
-      { label: "Partner & Netzwerk", href: "/about#partner" },
-      { label: "Publikationen", href: "/about#publikationen" },
+      { label: "Über mich", href: "/about" },
+      { label: "Haltung", href: "/about#haltung" },
       { label: "Kontakt", href: "/kontakt" },
     ],
   },
   {
     title: "Kontakt",
     links: [
-      { label: "kontakt@bestmann-schmidt.de", href: "mailto:kontakt@bestmann-schmidt.de" },
-      { label: "+49 40 / 000 000", href: "tel:+4940000000" },
-      { label: "Hamburg · Wien · Zürich", href: "/kontakt" },
+      { label: "kontakt@karenbestmann.de", href: "mailto:kontakt@karenbestmann.de" },
+      { label: "+49 (0)40 · 000 000", href: "tel:+4940000000" },
+      { label: "Hamburg", href: "/kontakt" },
     ],
   },
 ];
@@ -38,21 +36,21 @@ export function Footer() {
           <div className="col-span-12 lg:col-span-6 flex flex-col gap-8">
             <Link href="/" className="inline-flex items-center w-fit group">
               <Image
-                src="/logo.svg"
-                alt="Bestmann & Schmidt"
-                width={220}
-                height={108}
-                className="h-14 w-auto invert opacity-95"
+                src="/Logo_karenbestmann.svg"
+                alt="Karen Bestmann"
+                width={311}
+                height={153}
+                className="h-12 w-auto invert opacity-95"
               />
             </Link>
             <p className="display-2 text-ivory max-w-xl">
-              Weder gut noch schlecht — gelöst ist jeder Konflikt gehaltvoll.
+              Menschlichkeit ist mein Kompass.
             </p>
             <Link
               href="/kontakt"
               className="btn-magnetic on-navy self-start"
             >
-              <span className="label">Gespräch vereinbaren</span>
+              <span className="label">Erstgespräch anfragen</span>
             </Link>
           </div>
 
@@ -75,13 +73,13 @@ export function Footer() {
         <div className="mt-20 pt-8 border-t border-ivory/15 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
             <span className="label text-ivory/50">
-              © {new Date().getFullYear()} Bestmann & Schmidt Partnerschaft mbB
+              © {new Date().getFullYear()} Karen Bestmann
             </span>
             <span
               aria-hidden
               className="hidden md:inline-block h-3 w-px bg-ivory/20"
             />
-            <span className="label text-ivory/50">a beeconnected company</span>
+            <span className="label text-ivory/50">Coaching · Mediation · Training</span>
           </div>
           <div className="flex items-center gap-6">
             <Link href="/impressum" className="label link-underline text-ivory/70">

@@ -7,10 +7,10 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 
 const navItems = [
-  { label: "Mediation", href: "/mediation" },
   { label: "Coaching", href: "/coaching" },
-  { label: "Beratung", href: "/beratung" },
-  { label: "Über uns", href: "/about" },
+  { label: "Training & Beratung", href: "/beratung" },
+  { label: "Mediation", href: "/mediation" },
+  { label: "Über mich", href: "/about" },
   { label: "Kontakt", href: "/kontakt" },
 ];
 
@@ -44,18 +44,18 @@ export function Navbar() {
         )}
       >
         <div className="container-editorial flex items-center justify-between h-24 md:h-28">
-          <Link href="/" className="flex items-center group" aria-label="Bestmann & Schmidt — Startseite">
+          <Link href="/" className="flex items-center group" aria-label="Karen Bestmann — Startseite">
             <Image
-              src="/logo.svg"
-              alt="Bestmann & Schmidt — Spezialisten für Mediation und Management Consulting"
-              width={240}
-              height={118}
+              src="/Logo_karenbestmann.svg"
+              alt="Karen Bestmann — Coaching, Mediation, Training"
+              width={311}
+              height={153}
               priority
-              className="h-14 md:h-16 w-auto transition-opacity duration-500 group-hover:opacity-80"
+              className="h-12 md:h-14 w-auto transition-opacity duration-500 group-hover:opacity-80"
             />
           </Link>
 
-          <nav className="hidden lg:flex items-center gap-8">
+          <nav className="hidden lg:flex items-center gap-7">
             {navItems.map((item) => (
               <Link
                 key={item.href}
@@ -71,7 +71,7 @@ export function Navbar() {
             href="/kontakt"
             className="hidden lg:inline-flex label text-navy link-underline link-underline-reverse"
           >
-            Gespräch vereinbaren
+            Erstgespräch anfragen
           </Link>
 
           <button
@@ -113,9 +113,9 @@ export function Navbar() {
             ))}
           </nav>
           <div className="flex flex-col gap-2 text-ivory/70">
-            <span className="label">Sprechen Sie mit uns</span>
-            <a href="mailto:kontakt@bestmann-schmidt.de" className="link-underline text-ivory">
-              kontakt@bestmann-schmidt.de
+            <span className="label">Sprechen wir miteinander</span>
+            <a href="mailto:kontakt@karenbestmann.de" className="link-underline text-ivory">
+              kontakt@karenbestmann.de
             </a>
           </div>
         </div>

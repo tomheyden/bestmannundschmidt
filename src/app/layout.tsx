@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Source_Serif_4, Playfair_Display } from "next/font/google";
 import "./globals.css";
-import { SmoothScrollWrapper } from "@/components/SmoothScrollWrapper";
-import { Navbar } from "@/components/Navbar";
-import { Footer } from "@/components/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -28,18 +25,19 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Bestmann & Schmidt — Mediation & Management Consulting",
-    template: "%s · Bestmann & Schmidt",
+    default: "Karen Bestmann — Coaching · Mediation · Training",
+    template: "%s · Karen Bestmann",
   },
   description:
-    "Specialists for Mediation & Management Consulting. Nachhaltige Leistungssteigerung durch menschliche Klärung — individuell, persönlich und mit Respekt vor der Sache.",
-  metadataBase: new URL("https://bestmann-schmidt.de"),
+    "Klarheit in Konflikten. Stärke in Kommunikation. Wirkung in Zusammenarbeit. Coaching, Mediation und Kommunikations­training für Führungskräfte, Teams und Organisationen — mit über 25 Jahren Erfahrung.",
+  metadataBase: new URL("https://karenbestmann.de"),
   openGraph: {
-    title: "Bestmann & Schmidt",
+    title: "Karen Bestmann — Coaching · Mediation · Training",
     description:
-      "Specialists for Mediation & Management Consulting. Nachhaltige Leistungssteigerung durch menschliche Klärung.",
+      "Klarheit in Konflikten. Stärke in Kommunikation. Wirkung in Zusammenarbeit.",
     type: "website",
     locale: "de_DE",
+    url: "https://karenbestmann.de",
   },
 };
 
@@ -54,13 +52,7 @@ export default function RootLayout({
       className={`${inter.variable} ${sourceSerif.variable} ${playfair.variable} h-full antialiased`}
       suppressHydrationWarning
     >
-      <body className="min-h-full bg-ivory text-navy">
-        <SmoothScrollWrapper>
-          <Navbar />
-          <main id="main">{children}</main>
-          <Footer />
-        </SmoothScrollWrapper>
-      </body>
+      <body className="min-h-full bg-ivory text-navy">{children}</body>
     </html>
   );
 }
