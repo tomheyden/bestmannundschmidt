@@ -50,11 +50,21 @@ export function LandingHero() {
           variants={fadeUp}
           className="serif-display text-ivory text-[clamp(2.25rem,5.6vw,5.25rem)] leading-[1.05] tracking-[-0.02em] max-w-[22ch]"
         >
-          Wenn Kommunikation schwierig wird, beginnt meine Arbeit.
+          Klarheit in Konflikten. Stärke in Kommunikation. Wirkung in Zusammenarbeit.
         </motion.h1>
 
-        <motion.div
+        <motion.p
           custom={2}
+          initial="hidden"
+          animate="visible"
+          variants={fadeUp}
+          className="text-ivory/80 text-[clamp(1rem,1.4vw,1.25rem)] leading-normal max-w-[52ch]"
+        >
+          Mediation, Coaching und Kommunikation für Führungskräfte, Teams und Organisationen.
+        </motion.p>
+
+        <motion.div
+          custom={3}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
@@ -74,7 +84,7 @@ export function LandingHero() {
       </div>
 
       <motion.div
-        custom={3}
+        custom={4}
         initial="hidden"
         animate="visible"
         variants={fadeUp}
