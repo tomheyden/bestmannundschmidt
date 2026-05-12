@@ -39,10 +39,10 @@ export default function ImpressumPage() {
               <p>
                 Karen Bestmann<br />
                 Coaching · Mediation · Training<br />
-                Hamburg
+                Kiel | Hamburg | Bundesweit
               </p>
               <p className="mt-4">
-                Telefon: +49 (0)40 · 000 000<br />
+                Telefon: +49 (0)177 432 43 88<br />
                 E-Mail: kontakt@karenbestmann.de<br />
                 Web: karenbestmann.de
               </p>

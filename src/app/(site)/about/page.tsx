@@ -74,20 +74,22 @@ export default function AboutPage() {
 
       <ContentSection
         eyebrow="Meine Arbeit"
-        heading="Ich arbeite mit Menschen — nicht mit Konzepten."
+        heading="Ich arbeite mit Menschen — nicht nur mit Konzepten."
         align="image-right"
         imageSrc="/karenbestmannportait.jpeg"
         imageAlt="Karen Bestmann"
+        imageAspect="portrait"
         tone="ivory"
         body={[
-          "Im Laufe der Jahre hat sich meine Arbeit immer weiter verdichtet: Es geht nicht um Methoden allein — es geht um das, was zwischen Menschen geschieht, wenn Kommunikation schwierig wird.",
-          "Ich habe mit Führungskräften gearbeitet, die unter hoher Verantwortung stehen. Mit Teams, die festgefahren waren. Mit Organisationen, in denen Zusammenarbeit nicht mehr funktioniert hat. Und immer wieder zeigt sich: Konflikte sind selten das eigentliche Problem — die zwischenmenschliche Kommunikation ist der Schlüssel.",
-          "Meine Stärke liegt darin, komplexe Situationen schnell zu erfassen, Muster sichtbar zu machen und wieder Struktur und Verständnis in Gespräche zu bringen. Dabei arbeite ich ruhig, klar und mit einer Haltung, die auf Respekt und Verantwortung basiert.",
+          "Ich liebe meine Arbeit — nicht im lauten, sondern im tiefen Sinn: Weil sie Menschen wieder miteinander ins Gespräch bringt.",
+          "Im Laufe der Jahre hat sich meine Arbeit immer weiter verdichtet: Es geht nicht nur um Methoden allein — es geht um das, was zwischen Menschen geschieht, wenn Kommunikation schwierig wird.",
+          "Ich habe mit Führungskräften gearbeitet, die unter hoher Verantwortung stehen. Mit Teams, die festgefahren waren. Mit Organisationen, in denen Zusammenarbeit nicht mehr funktioniert hat. Und immer wieder zeigt sich: Auch wenn wir Menschen mit der besten Absicht handeln, liegt der Schlüssel für Missverständnisse, Verletzungen und Konflikte oft in der zwischenmenschlichen Kommunikation.",
+          "Meine Stärke liegt darin, komplexe Situationen schnell zu erfassen, Muster sichtbar zu machen und wieder Struktur und Verständnis in Gespräche zu bringen. Dabei arbeite ich ruhig, klar und mit einer Haltung, die auf Respekt, Wertschätzung und Verantwortung basiert.",
         ]}
         quote="Ich liebe meine Arbeit — nicht im lauten, sondern im tiefen Sinn: Weil sie Menschen wieder miteinander ins Gespräch bringt."
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-20 md:py-24 bg-ivory">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 mb-12 md:mb-16">
             <div className="col-span-12 md:col-span-5 flex flex-col gap-5">
@@ -128,7 +130,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section id="haltung" className="py-24 md:py-32 bg-paper">
+      <section id="haltung" className="py-20 md:py-24 bg-paper">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 mb-14">
             <div className="col-span-12 md:col-span-5 flex flex-col gap-5">
@@ -165,7 +167,8 @@ export default function AboutPage() {
         eyebrow="Abschluss"
         heading="Ich arbeite dort, wo Klarheit notwendig ist, um wieder handlungsfähig zu werden."
         align="image-left"
-        imageLabel="Raum · Fenster"
+        imageSrc="/img/about-leuchtturm-kiel.jpg"
+        imageAlt="Leuchtturm in Kiel — Raum für Klarheit"
         imageAspect="landscape"
         tone="ivory"
         body={[

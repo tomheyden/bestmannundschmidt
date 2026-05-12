@@ -1,17 +1,18 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
 const fadeUp = {
-  hidden: { y: 20, opacity: 0 },
+  hidden: { y: 18, opacity: 0 },
   visible: (i: number) => ({
     y: 0,
     opacity: 1,
     transition: {
-      delay: 0.1 + i * 0.1,
-      duration: 0.8,
+      delay: 0.08 + i * 0.08,
+      duration: 0.75,
       ease: [0.22, 1, 0.36, 1] as const,
     },
   }),
@@ -19,17 +20,25 @@ const fadeUp = {
 
 export function LandingHero() {
   return (
-    <section className="relative bg-navy text-ivory overflow-hidden h-dvh min-h-[640px] flex flex-col">
-      <span
-        aria-hidden
-        className="pointer-events-none absolute -top-48 -right-40 h-[36rem] w-[36rem] rounded-full bg-ivory/[0.035] blur-3xl"
+    <section className="relative text-ivory overflow-hidden h-dvh min-h-[560px] flex flex-col isolate">
+      <Image
+        src="/img/hamburg-skyline.jpg"
+        alt="Hamburg · Speicherstadt bei Dämmerung"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover -z-20"
       />
-      <span
+      <div
         aria-hidden
-        className="pointer-events-none absolute -bottom-56 -left-40 h-[32rem] w-[32rem] rounded-full bg-ivory/[0.025] blur-3xl"
+        className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent"
       />
 
-      <div className="relative flex-1 container-editorial pt-28 md:pt-32 pb-10 md:pb-14 flex flex-col justify-center gap-10 md:gap-14">
+      <div className="relative flex-1 container-editorial pt-28 md:pt-32 pb-12 md:pb-16 flex flex-col justify-center gap-8 md:gap-10">
         <motion.div
           custom={0}
           initial="hidden"
@@ -48,7 +57,7 @@ export function LandingHero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="serif-display text-ivory text-[clamp(2.25rem,5.6vw,5.25rem)] leading-[1.05] tracking-[-0.02em] max-w-[22ch]"
+          className="serif-display text-ivory text-[clamp(2rem,4.6vw,4.25rem)] leading-[1.06] tracking-[-0.018em] max-w-[22ch]"
         >
           Klarheit in Konflikten.<br />Stärke in Kommunikation.<br />Wirkung in Zusammenarbeit.
         </motion.h1>
@@ -58,9 +67,9 @@ export function LandingHero() {
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="text-ivory/80 text-[clamp(1rem,1.4vw,1.25rem)] leading-normal max-w-[52ch]"
+          className="text-ivory/80 text-[clamp(0.95rem,1.1vw,1.0625rem)] leading-relaxed max-w-[58ch]"
         >
-          Mediation, Coaching und Kommunikation für Führungskräfte, Teams und Organisationen.
+          Coaching, Mediation und Kommunikation für Führungskräfte, Mitarbeitende, Teams und Organisationen.
         </motion.p>
 
         <motion.div
@@ -90,13 +99,13 @@ export function LandingHero() {
         variants={fadeUp}
         className="relative container-editorial pb-6 md:pb-8"
       >
-        <div className="h-px bg-ivory/15" />
-        <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-2 text-[13px] text-ivory/60">
-          <span className="label text-ivory/50">25+ Jahre Erfahrung</span>
-          <span aria-hidden className="h-3 w-px bg-ivory/15" />
-          <span className="label text-ivory/50">Hamburg & remote</span>
-          <span aria-hidden className="h-3 w-px bg-ivory/15" />
-          <span className="label text-ivory/50">Deutsch · Englisch</span>
+        <div className="h-px bg-ivory/20" />
+        <div className="mt-4 flex flex-wrap items-center gap-x-8 gap-y-2 text-[12px] text-ivory/65">
+          <span className="label text-ivory/55">25+ Jahre Erfahrung</span>
+          <span aria-hidden className="h-3 w-px bg-ivory/20" />
+          <span className="label text-ivory/55">Hamburg · Kiel · Bundesweit</span>
+          <span aria-hidden className="h-3 w-px bg-ivory/20" />
+          <span className="label text-ivory/55">Deutsch · Englisch</span>
         </div>
       </motion.div>
     </section>

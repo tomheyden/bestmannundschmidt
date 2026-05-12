@@ -14,28 +14,23 @@ export const metadata: Metadata = {
 const phasen = [
   {
     index: "I",
-    title: "Vorphase — vertraulich verstehen.",
-    body: "Getrennte Vorgespräche mit allen Beteiligten. Wir klären Anliegen, Interessen, Erwartungen und Grenzen. Ergebnis ist kein Urteil, sondern eine Landkarte: Wo stehen wir — und wohin wollen wir?",
+    title: "Grundlagen.",
+    body: "Das Hausmodell von Dr. Bischop verdeutlicht die Ursachen von Konflikten: Während Dach und Wände die Sach- und Beziehungsebene darstellen, auf denen klassische Verhandlungen stattfinden, bildet das Fundament die Systemgesetze (Zugehörigkeit, Wertschätzung, Gerechtigkeit, Ausgleich, Ordnung). Wird das Fundament in einem dieser Bereiche verletzt, führt dies zu Eskalation, Misstrauen und Blockaden. Erst wenn das Fundament wieder stabil ist, entstehen Vereinbarungen, die im Alltag tragfähig sind und nachhaltig wirken.",
   },
   {
     index: "II",
-    title: "Themen — Struktur schaffen.",
-    body: "Gemeinsam benennen wir, worum es wirklich geht. Sachthemen werden von Beziehungsthemen getrennt — nicht, um letztere zu minimieren, sondern um beiden einen angemessenen Raum zu geben.",
+    title: "Auftragsklärung.",
+    body: "Mediation, Moderation oder Coaching? Zum Start analysieren wir und klären den besten Weg. Bei persönlichen Blockaden, die auf die Umgebung (Mitarbeitende, Team, das Unternehmen, die Familie) belastend wirken, erziele ich mit Coachings oft die schnellsten Ergebnisse. Eine Kombination aus Coaching und Mediation ermöglicht es, akute Konflikte zu lösen und den Einzelnen persönlich zu stärken. Durch die Analyse des Ursprungs (Zeit-Ursachen-Diagramm) ergründen wir die wahren Hintergründe. Sachthemen, Beziehungen und Systemgesetz-Verletzungen werden reflektiert und bearbeitet. Zudem klären wir, wer am Konflikt beteiligt und relevant für die Lösung ist — und Sie erhalten von mir eine klare Empfehlung zum Rahmen und zum Vorgehen.",
   },
   {
     index: "III",
-    title: "Interessen — hinter den Positionen.",
-    body: "Positionen sind die Oberfläche, Interessen der tragende Grund. Wir arbeiten mit beiden: mit den geäußerten Forderungen und mit den oft unausgesprochenen Motiven, Bedürfnissen und Befürchtungen.",
+    title: "Das Fundament für Beziehungen.",
+    body: "Wir beheben Verletzungen der Systemgesetze, um das gegenseitige Vertrauen wiederherzustellen und destruktive Dynamiken wie Rückzug oder Angriffe zu stoppen. Durch die systematische Auflösung der Verletzungen wird eine Gesprächsbasis und das gegenseitige Vertrauen wiederhergestellt.",
   },
   {
     index: "IV",
-    title: "Optionen — Möglichkeiten öffnen.",
-    body: "Kreative Phase. Wir entwickeln Lösungsvarianten, bevor wir bewerten — damit das Denken weit bleibt. Erst dann prüfen wir: Was ist tragfähig, was ist fair, was ist realistisch?",
-  },
-  {
-    index: "V",
-    title: "Vereinbarung — was trägt.",
-    body: "Eine Mediationsvereinbarung ist keine Kompromissformel, sondern ein gemeinsamer Entwurf. Sie ist konkret, prüfbar — und sie dokumentiert nicht nur das Was, sondern auch das Wie.",
+    title: "Alltagstauglichkeit sichern.",
+    body: "Mit dem Wissen um die Systemgesetze meistern Sie Konflikte souverän und können Verletzungen sofort lösen. Gemeinsam erarbeiten wir verbindliche Regeln und Rollenbilder, die Ihren Alltag entlasten. Damit die neuen Lösungen fest verankert bleiben und ein Zurückfallen in alte Dynamiken verhindert werden, kann ich Sie auf Wunsch gerne begleiten.",
   },
 ];
 
@@ -62,10 +57,12 @@ export default function MediationPage() {
         headline="Konflikte gehören zum Leben — entscheidend ist, wie wir mit ihnen umgehen."
         description="In der Mediation unterstütze ich Sie dabei, wieder ins Gespräch zu kommen, Missverständnisse zu klären und Verletzungen aufzulösen — um gemeinsam tragfähige Lösungen zu entwickeln und unbelastete Beziehungen zu ermöglichen."
         imageLabel="Mediation · Arbeitsraum"
+        imageSrc="/img/mediation-arbeitsraum.jpg"
+        imageAlt="Mediation · Arbeitsraum"
         meta={[
-          { label: "Verfahren", value: "5 Phasen" },
-          { label: "Umfang", value: "1 Tag – 6 Monate" },
-          { label: "Format", value: "vor Ort / hybrid" },
+          { label: "Verfahren", value: "4 Schritte" },
+          { label: "Umfang", value: "1 Tag – ca. 6 Monate" },
+          { label: "Format", value: "vor Ort | Hamburg | Kiel" },
         ]}
       />
 
@@ -73,32 +70,37 @@ export default function MediationPage() {
         eyebrow="Methodik"
         heading="Empathie trifft Klarheit."
         align="image-right"
-        imageLabel="Notizen · Gespräch"
+        imageSrc="/img/mediation-start.jpg"
+        imageAlt="Start einer Mediation"
         imageAspect="portrait"
         body={[
-          "Gute Mediation ist beides: warm und klar. Sie hält den Raum für das, was schwer auszusprechen ist — und sie bringt Entscheidungen zustande, die tragen.",
-          "Ich arbeite nach einem erprobten Phasenmodell, erweitert um systemische und kommunikative Perspektiven. Ziel ist nicht der schnelle Kompromiss, sondern die Lösung, die alle Seiten mittragen können.",
+          "Mediation ist eine geführte Form des Denkens, des Fühlens — und des Zuhörens.",
+          "Als Mediatorin verantworte ich den Rahmen und den Raum für das, was schwer auszusprechen ist. Ich arbeite strukturiert und erweitert um systemische und kommunikative Perspektiven.",
+          "Ziel ist nicht der schnelle Kompromiss, sondern die Auflösung von Verletzungen, um eine stabile Basis für gesunde und tragfähige Beziehungen zu ermöglichen.",
         ]}
-        quote="Mediation ist eine geführte Form des Denkens — und des Zuhörens."
+        quote="Mediation ist eine geführte Form des Denkens, des Fühlens — und des Zuhörens."
         cta={{ label: "Mehr über meine Haltung", href: "/about#haltung" }}
       />
 
-      <section className="py-24 md:py-32 bg-ivory">
+      <section className="py-20 md:py-24 bg-ivory">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 mb-14">
             <div className="col-span-12 md:col-span-5 flex flex-col gap-5">
               <div className="flex items-center gap-4">
                 <span className="h-px w-8 bg-navy/40" />
-                <span className="label text-navy/65">Fünf Phasen</span>
+                <span className="label text-navy/65">4 Schritte</span>
               </div>
               <h2 className="display-2 text-navy">Das Verfahren, Schritt für Schritt.</h2>
             </div>
             <div className="col-span-12 md:col-span-6 md:col-start-7 self-end">
               <p className="prose-editorial">
                 <span>
-                  Jedes Verfahren wird auf Ihren Fall zugeschnitten. Die fünf Phasen markieren den Rahmen — innerhalb
-                  dieses Rahmens ist vieles möglich: vom einzelnen Klärungstag bis zu einem mehrstufigen Prozess über
-                  Monate.
+                  Jedes Verfahren wird auf Ihren Fall zugeschnitten. Innerhalb dieses Rahmens ist vieles möglich: vom
+                  einzelnen Klärungstag, Einzel-Coachings bis zu einem mehrstufigen Prozess über Monate.
+                </span>
+                <span>
+                  Zudem arbeite ich mit dem Hausmodell von meinem langjährigen und geschätzten Freund und Kollegen
+                  Dr. Dieter Bischop.
                 </span>
               </p>
             </div>
@@ -121,7 +123,7 @@ export default function MediationPage() {
         cta={{ label: "Erstgespräch anfragen", href: "/kontakt" }}
       />
 
-      <section className="py-24 md:py-32 bg-navy text-ivory">
+      <section className="py-20 md:py-24 bg-navy text-ivory">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 mb-12">
             <div className="col-span-12 md:col-span-5 flex flex-col gap-5">

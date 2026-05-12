@@ -31,7 +31,7 @@ const navGroups = [
 export function Footer() {
   return (
     <footer className="bg-navy text-ivory">
-      <div className="container-editorial py-24 md:py-32">
+      <div className="container-editorial py-20 md:py-24">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 lg:col-span-6 flex flex-col gap-8">
             <Link href="/" className="inline-flex items-center w-fit group">

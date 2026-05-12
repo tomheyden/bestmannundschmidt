@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/Hero";
+import Image from "next/image";
 import { ContentSection } from "@/components/ContentSection";
 import { CTASection } from "@/components/CTASection";
-import { ImageFallback } from "@/components/ImageFallback";
 import { Anchor, Compass, MessageSquare, Scale, Users, type LucideIcon } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -49,10 +49,12 @@ export default function BeratungPage() {
         headline="Kommunikation stärken. Zusammenarbeit wirksam gestalten."
         description="In Trainings und Beratungen unterstütze ich Teams und Organisationen dabei, ihre Kommunikation zu verbessern und wieder handlungsfähig zu werden — in konkreten Formaten, praxisnah, auf Ihr Thema zugeschnitten."
         imageLabel="Training · Workshop"
+        imageSrc="/img/training-workshop.jpg"
+        imageAlt="Training · Workshop — zusammen wirksam gestalten"
         meta={[
           { label: "Format", value: "Training · Workshop · Beratung" },
           { label: "Gruppe", value: "Team · Führung · Organisation" },
-          { label: "Ort", value: "Hamburg / bei Ihnen" },
+          { label: "Ort", value: "Hamburg | Kiel | bei Ihnen" },
         ]}
       />
 
@@ -69,7 +71,7 @@ export default function BeratungPage() {
         quote="Gute Kommunikation ist kein Talent — sie ist ein Handwerk, das sich üben lässt."
       />
 
-      <section className="py-24 md:py-32 bg-navy text-ivory">
+      <section className="py-20 md:py-24 bg-navy text-ivory">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 mb-14">
             <div className="col-span-12 md:col-span-6 flex flex-col gap-5">
@@ -113,7 +115,7 @@ export default function BeratungPage() {
         </div>
       </section>
 
-      <section id="team" className="py-24 md:py-32 bg-paper">
+      <section id="team" className="py-20 md:py-24 bg-paper">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 items-start">
             <div className="col-span-12 md:col-span-5">
@@ -143,7 +145,15 @@ export default function BeratungPage() {
           </div>
           <div className="mt-14 grid grid-cols-12 gap-6 items-end">
             <div className="col-span-12 md:col-span-8">
-              <ImageFallback label="Team · Offsite" aspect="landscape" />
+              <figure className="relative aspect-4/3 w-full overflow-hidden bg-navy/5">
+                <Image
+                  src="/img/training-offsite.jpg"
+                  alt="Team-Offsite am Meer"
+                  fill
+                  sizes="(min-width: 1024px) 720px, (min-width: 768px) 64vw, 100vw"
+                  className="object-cover"
+                />
+              </figure>
             </div>
             <div className="col-span-12 md:col-span-4">
               <blockquote className="lede text-navy/90 border-l border-navy/25 pl-5 max-w-sm">

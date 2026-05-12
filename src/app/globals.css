@@ -95,24 +95,24 @@ html.lenis body {
   font-family: var(--font-display), "Playfair Display", Georgia, serif;
   font-weight: 400;
   letter-spacing: -0.022em;
-  line-height: 1.02;
-  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  line-height: 1.05;
+  font-size: clamp(2rem, 4.6vw, 4rem);
 }
 
 .display-2 {
   font-family: var(--font-sans), sans-serif;
   font-weight: 400;
   letter-spacing: -0.025em;
-  line-height: 1.08;
-  font-size: clamp(2rem, 3.6vw, 3.25rem);
+  line-height: 1.12;
+  font-size: clamp(1.5rem, 2.8vw, 2.375rem);
 }
 
 .display-3 {
   font-family: var(--font-sans), sans-serif;
   font-weight: 500;
   letter-spacing: -0.02em;
-  line-height: 1.15;
-  font-size: clamp(1.5rem, 2.2vw, 2rem);
+  line-height: 1.2;
+  font-size: clamp(1.125rem, 1.6vw, 1.5rem);
 }
 
 /* Optional Playfair display — reserved for rare, decisive moments */
@@ -125,16 +125,16 @@ html.lenis body {
 .lede {
   font-family: var(--font-sans), sans-serif;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.55;
   letter-spacing: -0.005em;
-  font-size: clamp(1.125rem, 1.5vw, 1.375rem);
+  font-size: clamp(1rem, 1.2vw, 1.125rem);
   color: color-mix(in srgb, var(--color-slate-detail) 92%, transparent);
 }
 
 .prose-editorial p {
-  font-size: 1rem;
+  font-size: 0.9375rem;
   line-height: 1.7;
-  color: color-mix(in srgb, var(--color-slate-detail) 92%, transparent);
+  color: color-mix(in srgb, var(--color-slate-detail) 90%, transparent);
   max-width: 62ch;
 }
 

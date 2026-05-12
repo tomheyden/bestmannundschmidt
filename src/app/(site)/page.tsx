@@ -12,6 +12,8 @@ const services: Service[] = [
     description:
       "Begleitung für persönliche und berufliche Themen — Entscheidungen treffen, Selbstführung stärken, nächste Schritte finden.",
     href: "/coaching",
+    imageSrc: "/img/coaching-gespraech.jpg",
+    imageAlt: "Coaching-Gespräch",
   },
   {
     number: "02",
@@ -20,6 +22,8 @@ const services: Service[] = [
     description:
       "Teams und Organisationen dabei unterstützen, Kommunikation zu verbessern und Zusammenarbeit wirksam zu gestalten.",
     href: "/beratung",
+    imageSrc: "/img/scott-graham-5fNmWej4tAA-unsplash.jpg",
+    imageAlt: "Training und Beratung — gemeinsam arbeiten",
   },
   {
     number: "03",
@@ -28,6 +32,8 @@ const services: Service[] = [
     description:
       "Wieder ins Gespräch kommen, Missverständnisse auflösen und tragfähige Lösungen gemeinsam entwickeln.",
     href: "/mediation",
+    imageSrc: "/img/dylan-gillis-KdeqA3aTnBY-unsplash.jpg",
+    imageAlt: "Mediation — Gespräche an einem Tisch",
   },
 ];
 
@@ -42,6 +48,7 @@ export default function HomePage() {
         align="image-right"
         imageSrc="/karenbestmannportait.jpeg"
         imageAlt="Karen Bestmann"
+        imageShape="circle"
         body={[
           "Ich begleite Führungskräfte, Teams und Organisationen in komplexen Kommunikations- und Konfliktsituationen — mit dem Ziel, Kommunikation zu verbessern, Konflikte zu klären und Entwicklung zu ermöglichen.",
           "Mein Fokus liegt auf Klarheit, Struktur und nachhaltiger Lösung — nicht auf kurzfristiger Beruhigung.",
@@ -54,7 +61,7 @@ export default function HomePage() {
       <EditorialGrid
         eyebrow="Meine Angebote"
         heading="Klarheit, Verbindung und Lösungen schaffen."
-        intro="Drei Zugänge, eine Haltung. Ich arbeite mit Menschen — nicht mit Konzepten."
+        intro="Drei Zugänge, eine Haltung. Ich arbeite mit Menschen — nicht nur mit Konzepten."
         services={services}
       />
 

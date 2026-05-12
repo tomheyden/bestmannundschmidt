@@ -46,9 +46,11 @@ export default function CoachingPage() {
         headline="Klarheit für persönliche und berufliche Themen."
         description="Im Coaching begleite ich Sie dabei, eigene Themen zu sortieren, neue Perspektiven zu entwickeln und konkrete nächste Schritte zu finden. Vertraulich, strukturiert und auf Augenhöhe."
         imageLabel="Coaching · Gespräch"
+        imageSrc="/img/coaching-gespraech.jpg"
+        imageAlt="Coaching-Gespräch"
         meta={[
           { label: "Format", value: "1:1" },
-          { label: "Ort", value: "Hamburg / remote" },
+          { label: "Ort", value: "Hamburg | Kiel | vor Ort | digital" },
           { label: "Umfang", value: "flexibel" },
         ]}
       />
@@ -67,21 +69,22 @@ export default function CoachingPage() {
         cta={{ label: "Meine Haltung", href: "/about#haltung" }}
       />
 
-      <section className="py-24 md:py-32 bg-paper">
+      <section className="py-20 md:py-24 bg-paper">
         <div className="container-editorial">
           <div className="grid grid-cols-12 gap-6 mb-20">
-            <div className="col-span-12 md:col-span-4 flex flex-col gap-6">
+            <div className="col-span-12 md:col-span-5 flex flex-col gap-6">
               <div className="flex items-center gap-4">
                 <span className="h-px w-10 bg-navy/40" />
                 <span className="label text-navy/70">Mögliche Inhalte</span>
               </div>
-              <h2 className="display-2 text-navy">Worüber wir arbeiten.</h2>
+              <h2 className="display-2 text-navy">Fokus-Themen im Coaching.</h2>
             </div>
             <div className="col-span-12 md:col-span-6 md:col-start-7 self-end">
               <p className="prose-editorial">
                 <span>
-                  Jedes Coaching beginnt mit einer Landkarte — nicht mit einem Programm. Aus der Landkarte entstehen
-                  Schwerpunkte. Diese Themen begegnen mir immer wieder.
+                  Kein Coaching ist wie das andere, denn es beginnt mit Ihrer individuellen Landkarte. Aus dieser
+                  Analyse entwickeln wir konkrete Schwerpunkte. Die folgenden Themen sind häufig von zentraler
+                  Bedeutung und begegnen mir immer wieder.
                 </span>
               </p>
             </div>
@@ -98,10 +101,25 @@ export default function CoachingPage() {
         imageAspect="landscape"
         tone="ivory"
         body={[
-          "Ein Coaching bei mir kann aus einem einzelnen Klärungsgespräch bestehen oder aus einem längeren Prozess mit mehreren Terminen. Wir arbeiten vor Ort in Hamburg oder digital — je nachdem, was zum Thema und zu Ihrem Alltag passt.",
+          "Ein Coaching bei mir kann aus einem einzelnen Klärungsgespräch bestehen oder aus einem längeren Prozess mit mehreren Terminen. Wir arbeiten vor Ort in Hamburg, Kiel, bei Ihnen oder digital — je nachdem, was zum Thema und zu Ihrem Alltag passt.",
           "Jede Zusammenarbeit beginnt mit einem kostenfreien Erstgespräch. Erst danach entscheiden wir gemeinsam, ob und in welcher Form ein Coaching trägt.",
         ]}
         cta={{ label: "Erstgespräch anfragen", href: "/kontakt" }}
+      />
+
+      <ContentSection
+        eyebrow="Team-Entwicklung"
+        heading="Team-Entwicklung."
+        align="image-right"
+        imageSrc="/img/training-offsite.jpg"
+        imageAlt="Team-Offsite am Meer"
+        imageAspect="landscape"
+        tone="paper"
+        body={[
+          "Team-Entwicklungen mit mir folgen keinem Workshop-Rezept. Sie sind zugeschnitten — auf Zusammensetzung, Historie und Reifegrad Ihres Teams.",
+          "Auf Basis der einzigartigen Dynamik Ihres Teams schaffen wir praxisnahe Vereinbarungen für echte Fortschritte — für ein gutes Gefühl und klare Ergebnisse.",
+        ]}
+        cta={{ label: "Mehr zu Training & Beratung", href: "/beratung#team" }}
       />
 
       <CTASection

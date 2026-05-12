@@ -9,7 +9,7 @@ type Props = {
 
 export function EditorialGrid({ eyebrow = "Arbeitsfelder", heading, intro, services }: Props) {
   return (
-    <section className="py-24 md:py-32 bg-ivory">
+    <section className="py-20 md:py-24 bg-ivory">
       <div className="container-editorial">
         <div className="grid grid-cols-12 gap-6">
           <div className="col-span-12 md:col-span-5 flex flex-col gap-5">
@@ -28,7 +28,7 @@ export function EditorialGrid({ eyebrow = "Arbeitsfelder", heading, intro, servi
           ) : null}
         </div>
 
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-6 gap-y-4">
+        <div className="mt-12 md:mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4">
           {services.map((service) => (
             <ServiceCard key={service.number} service={service} />
           ))}

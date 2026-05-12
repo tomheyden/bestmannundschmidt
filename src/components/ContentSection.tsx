@@ -96,7 +96,7 @@ export function ContentSection({
       : "col-span-12 md:col-span-5 md:col-start-1 md:row-start-1";
 
   return (
-    <section className={cn("py-24 md:py-32", toneClass)}>
+    <section className={cn("py-20 md:py-24", toneClass)}>
       <div className="container-editorial">
         <div className="grid grid-cols-12 gap-6 items-start">
           <motion.div
@@ -129,7 +129,15 @@ export function ContentSection({
                   />
                 </figure>
               ) : imageSrc ? (
-                <figure className="relative aspect-3/4 overflow-hidden bg-navy/5">
+                <figure
+                  className={cn(
+                    "relative overflow-hidden bg-navy/5",
+                    imageAspect === "portrait" && "aspect-3/4",
+                    imageAspect === "landscape" && "aspect-4/3",
+                    imageAspect === "square" && "aspect-square",
+                    imageAspect === "tall" && "aspect-2/3",
+                  )}
+                >
                   <Image
                     src={imageSrc}
                     alt={imageAlt ?? imageLabel ?? ""}

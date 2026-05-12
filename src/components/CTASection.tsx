@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
 type Props = {
@@ -15,17 +16,28 @@ export function CTASection({
   cta = { label: "Termin anfragen", href: "/kontakt" },
 }: Props) {
   return (
-    <section className="relative overflow-hidden bg-navy text-ivory">
-      <div className="container-editorial py-24 md:py-32">
+    <section className="relative overflow-hidden bg-navy text-ivory isolate">
+      <Image
+        src="/img/charles-forerunner-3fPXt37X6UQ-unsplash.jpg"
+        alt=""
+        fill
+        sizes="100vw"
+        className="object-cover opacity-35 -z-10"
+      />
+      <div
+        aria-hidden
+        className="absolute inset-0 -z-10 bg-linear-to-r from-navy/95 via-navy/80 to-navy/60"
+      />
+      <div className="container-editorial py-20 md:py-28">
         <div className="grid grid-cols-12 gap-6 items-end">
-          <div className="col-span-12 lg:col-span-7 flex flex-col gap-6">
+          <div className="col-span-12 lg:col-span-7 flex flex-col gap-5">
             <div className="flex items-center gap-4">
               <span className="h-px w-8 bg-ivory/40" />
               <span className="label text-ivory/70">{eyebrow}</span>
             </div>
             <h2 className="display-1 text-ivory">{headline}</h2>
           </div>
-          <div className="col-span-12 lg:col-span-4 lg:col-start-9 flex flex-col gap-6">
+          <div className="col-span-12 lg:col-span-4 lg:col-start-9 flex flex-col gap-5">
             <p className="lede text-ivory/80">{description}</p>
             <Link href={cta.href} className="btn-magnetic on-navy self-start">
               <span className="label">{cta.label}</span>

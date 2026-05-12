@@ -20,7 +20,8 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
-  const darkHero = pathname === "/";
+  const darkHeroRoutes = ["/", "/coaching", "/beratung", "/mediation"];
+  const darkHero = darkHeroRoutes.includes(pathname);
   const overDark = darkHero && !scrolled;
 
   useEffect(() => {

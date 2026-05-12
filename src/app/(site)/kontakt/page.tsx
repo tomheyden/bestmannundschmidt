@@ -71,22 +71,23 @@ export default function KontaktPage() {
                 <Link href="mailto:kontakt@karenbestmann.de" className="link-underline text-navy text-lg tracking-tight">
                   kontakt@karenbestmann.de
                 </Link>
-                <Link href="tel:+4940000000" className="link-underline text-navy/80 text-[15px]">
-                  +49 (0)40 · 000 000
+                <Link href="tel:+4917743243488" className="link-underline text-navy/80 text-[15px]">
+                  +49 (0)177 432 43 88
                 </Link>
               </div>
               <div className="flex flex-col gap-3">
-                <span className="label text-navy/60">Sprechzeiten</span>
+                <span className="label text-navy/60">Erreichbarkeit</span>
                 <p className="text-[15px] leading-relaxed text-slate-detail/90">
-                  Mo — Fr, 9 — 18 Uhr<br />
-                  Termine nach Vereinbarung.
+                  24/7 Anrufbeantworter<br />
+                  Rückruf innerhalb eines Tages<br />
+                  Termine nach Vereinbarung
                 </p>
               </div>
               <div className="flex flex-col gap-3">
                 <span className="label text-navy/60">Ort</span>
                 <p className="text-[15px] leading-relaxed text-slate-detail/90">
-                  Hamburg<br />
-                  Termine vor Ort, bei Ihnen oder digital.
+                  Hamburg | Kiel<br />
+                  Bundesweit vor Ort | Digital
                 </p>
               </div>
             </aside>
@@ -97,11 +98,13 @@ export default function KontaktPage() {
       <ContentSection
         eyebrow="Anreise"
         heading="Ob bei mir, bei Ihnen oder digital — passend zum Thema."
+        imageSrc="/img/kontakt-hamburg-hafen.jpeg"
+        imageAlt="Hamburger Hafen"
         imageLabel="Hamburg · Hafen"
         align="image-right"
         imageAspect="landscape"
         body={[
-          "Viele Gespräche führe ich in Hamburg. Ebenso häufig treffen wir uns in Ihrem Unternehmen, an einem neutralen Ort, oder digital — wenn das für Sie besser passt oder Vertraulichkeit es nahelegt.",
+          "Viele Gespräche führe ich in Hamburg und in Kiel. Ebenso häufig treffen wir uns in Ihrem Unternehmen, an einem neutralen Ort, oder digital — wenn das für Sie besser passt oder Vertraulichkeit es nahelegt.",
           "Für längere Klärungsprozesse empfehle ich regelmäßig einen externen Ort — fernab des Tagesgeschäfts, in bewusst reduzierter Umgebung. Nichts macht Verständigung so leicht wie ein Raum, der selbst ruhig ist.",
         ]}
       />
