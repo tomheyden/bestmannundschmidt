@@ -22,8 +22,7 @@ const navGroups = [
     title: "Kontakt",
     links: [
       { label: "kontakt@karenbestmann.de", href: "mailto:kontakt@karenbestmann.de" },
-      { label: "+49 (0)40 · 000 000", href: "tel:+4940000000" },
-      { label: "Hamburg", href: "/kontakt" },
+      { label: "0177 432 4388", href: "tel:+491774324388" },
     ],
   },
 ];

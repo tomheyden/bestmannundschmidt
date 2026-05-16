@@ -238,7 +238,9 @@ html.lenis body {
   position: absolute;
   inset: 0;
   z-index: -1;
-  background: currentColor;
+  /* Fixed fill — must not follow the animated `color`, otherwise the
+     panel fades to the hover text color and the label turns invisible. */
+  background: var(--btn-fill, currentColor);
   transform: translateY(101%);
   transition: transform 420ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -250,6 +252,7 @@ html.lenis body {
 
 .btn-magnetic.on-navy {
   color: #f8fafc;
+  --btn-fill: #f8fafc;
 }
 
 .btn-magnetic.on-navy:hover,
@@ -259,6 +262,7 @@ html.lenis body {
 
 .btn-magnetic.on-ivory {
   color: #0d1b2b;
+  --btn-fill: #0d1b2b;
 }
 
 .btn-magnetic.on-ivory:hover,

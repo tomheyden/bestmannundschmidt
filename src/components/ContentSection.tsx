@@ -108,14 +108,15 @@ export function ContentSection({
             className={cn(
               "relative",
               imageCol,
-              imageShape === "circle" && "flex justify-center",
+              imageShape === "circle" && "md:flex md:justify-center",
             )}
           >
             <div
               data-parallax
               className={cn(
                 "will-change-transform",
-                imageShape === "circle" && "w-full max-w-130",
+                imageShape === "circle" &&
+                  "w-full max-w-40 sm:max-w-xs md:max-w-130",
               )}
             >
               {imageShape === "circle" && imageSrc ? (

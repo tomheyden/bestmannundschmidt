@@ -59,7 +59,9 @@ export default function CoachingPage() {
         eyebrow="Zugang"
         heading="Nicht Ratgeberin, sondern Resonanzraum."
         align="image-right"
-        imageLabel="Notizbuch"
+        imageLabel="Coaching · Ziel: Klarheit & Stimmigkeit"
+        imageSrc="/img/coaching-klarheit-stimmigkeit.jpg"
+        imageAlt="Coaching — Klarheit und Stimmigkeit"
         imageAspect="portrait"
         body={[
           "Gutes Coaching erklärt nicht — es hört anders zu. Ich arbeite mit einer Mischung aus systemischer und kommunikativer Perspektive. Das Ergebnis sind keine Tipps, sondern eigene Einsichten, die tragen.",
@@ -97,7 +99,9 @@ export default function CoachingPage() {
         eyebrow="Format"
         heading="So, wie es zu Ihnen passt."
         align="image-left"
-        imageLabel="Ort · Weite"
+        imageLabel="Coaching · Weite & Perspektiven"
+        imageSrc="/img/coaching-weite-perspektiven.jpeg"
+        imageAlt="Coaching — Weite und Perspektiven"
         imageAspect="landscape"
         tone="ivory"
         body={[
@@ -119,7 +123,7 @@ export default function CoachingPage() {
           "Team-Entwicklungen mit mir folgen keinem Workshop-Rezept. Sie sind zugeschnitten — auf Zusammensetzung, Historie und Reifegrad Ihres Teams.",
           "Auf Basis der einzigartigen Dynamik Ihres Teams schaffen wir praxisnahe Vereinbarungen für echte Fortschritte — für ein gutes Gefühl und klare Ergebnisse.",
         ]}
-        cta={{ label: "Mehr zu Training & Beratung", href: "/beratung#team" }}
+        cta={{ label: "Mehr zu Training & Beratung", href: "/beratung" }}
       />
 
       <CTASection

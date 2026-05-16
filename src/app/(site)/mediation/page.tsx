@@ -3,7 +3,7 @@ import { Hero } from "@/components/Hero";
 import { ContentSection } from "@/components/ContentSection";
 import { Accordion } from "@/components/Accordion";
 import { CTASection } from "@/components/CTASection";
-import { ImageFallback } from "@/components/ImageFallback";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "Mediation",
@@ -15,7 +15,7 @@ const phasen = [
   {
     index: "I",
     title: "Grundlagen.",
-    body: "Das Hausmodell von Dr. Bischop verdeutlicht die Ursachen von Konflikten: Während Dach und Wände die Sach- und Beziehungsebene darstellen, auf denen klassische Verhandlungen stattfinden, bildet das Fundament die Systemgesetze (Zugehörigkeit, Wertschätzung, Gerechtigkeit, Ausgleich, Ordnung). Wird das Fundament in einem dieser Bereiche verletzt, führt dies zu Eskalation, Misstrauen und Blockaden. Erst wenn das Fundament wieder stabil ist, entstehen Vereinbarungen, die im Alltag tragfähig sind und nachhaltig wirken.",
+    body: "Das Modell von Dr. Bischop verdeutlicht die Ursachen von Konflikten: Während Dach und Wände des Hauses die Sach- und Beziehungsebene darstellen, auf denen klassische Verhandlungen stattfinden, bildet das Fundament die Systemgesetze (Zugehörigkeit, Wertschätzung, Gerechtigkeit, Ausgleich, Ordnung). Wird das Fundament in einem dieser Bereiche verletzt, führt dies zu Eskalation, Misstrauen und Blockaden. Erst wenn das Fundament wieder stabil ist, entstehen Vereinbarungen, die im Alltag tragfähig sind und nachhaltig wirken.",
   },
   {
     index: "II",
@@ -97,9 +97,9 @@ export default function MediationPage() {
                 <span>
                   Jedes Verfahren wird auf Ihren Fall zugeschnitten. Innerhalb dieses Rahmens ist vieles möglich: vom
                   einzelnen Klärungstag, Einzel-Coachings bis zu einem mehrstufigen Prozess über Monate.
-                </span>
+                </span>{" "}
                 <span>
-                  Zudem arbeite ich mit dem Hausmodell von meinem langjährigen und geschätzten Freund und Kollegen
+                  Zudem arbeite ich mit dem Kommunikationsmodell von meinem langjährigen und geschätzten Freund und Kollegen
                   Dr. Dieter Bischop.
                 </span>
               </p>
@@ -113,7 +113,9 @@ export default function MediationPage() {
         eyebrow="Nutzen"
         heading="Klarheit, Akzeptanz, neue Perspektiven."
         align="image-left"
-        imageLabel="Haus · Detail"
+        imageLabel="Neue Perspektiven"
+        imageSrc="/img/mediation-neue-perspektiven.jpeg"
+        imageAlt="Neue Perspektiven gewinnen"
         imageAspect="landscape"
         tone="paper"
         body={[
@@ -145,9 +147,15 @@ export default function MediationPage() {
               </li>
             ))}
           </ul>
-          <div className="mt-14">
-            <ImageFallback label="Gespräch" aspect="landscape" tone="paper" />
-          </div>
+          <figure className="mt-14 relative aspect-[16/10] overflow-hidden bg-navy-soft">
+            <Image
+              src="/img/mediation-gespraechsende.jpg"
+              alt="Mediation — am Ende des Gesprächs"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </figure>
         </div>
       </section>
 

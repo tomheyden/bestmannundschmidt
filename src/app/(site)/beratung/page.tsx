@@ -62,7 +62,9 @@ export default function BeratungPage() {
         eyebrow="Haltung"
         heading="Keine Schablonen. Ihr Thema, Ihr Kontext."
         align="image-right"
-        imageLabel="Arbeitsraum"
+        imageLabel="Offenheit · Echte Klärung"
+        imageSrc="/img/beratung-offenheit-klaerung.jpg"
+        imageAlt="Offenheit für echte Klärung eigener Themen"
         imageAspect="portrait"
         body={[
           "Trainings, die man schon tausendmal gesehen hat, lösen selten das, was wirklich ansteht. Ich entwickle Formate, die zu Ihrem Team, Ihrer Situation und Ihrem Ziel passen — und in denen wirklich gearbeitet wird.",

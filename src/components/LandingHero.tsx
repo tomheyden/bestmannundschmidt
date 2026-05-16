@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -20,24 +19,7 @@ const fadeUp = {
 
 export function LandingHero() {
   return (
-    <section className="relative text-ivory overflow-hidden h-dvh min-h-[560px] flex flex-col isolate">
-      <Image
-        src="/img/hamburg-skyline.jpg"
-        alt="Hamburg · Speicherstadt bei Dämmerung"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover -z-20"
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"
-      />
-      <div
-        aria-hidden
-        className="absolute inset-0 -z-10 bg-gradient-to-t from-navy/85 via-navy/20 to-transparent"
-      />
-
+    <section className="gradient-navy relative text-ivory overflow-hidden h-dvh min-h-[560px] flex flex-col isolate">
       <div className="relative flex-1 container-editorial pt-28 md:pt-32 pb-12 md:pb-16 flex flex-col justify-center gap-8 md:gap-10">
         <motion.div
           custom={0}
@@ -105,7 +87,7 @@ export function LandingHero() {
           <span aria-hidden className="h-3 w-px bg-ivory/20" />
           <span className="label text-ivory/55">Hamburg · Kiel · Bundesweit</span>
           <span aria-hidden className="h-3 w-px bg-ivory/20" />
-          <span className="label text-ivory/55">Deutsch · Englisch</span>
+          <span className="label text-ivory/55">Deutsch</span>
         </div>
       </motion.div>
     </section>

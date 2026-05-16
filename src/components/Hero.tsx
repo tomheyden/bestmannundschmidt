@@ -35,7 +35,7 @@ export function Hero({
   meta = [
     { label: "Erfahrung", value: "25+ Jahre" },
     { label: "Tätig in", value: "Hamburg & remote" },
-    { label: "Sprachen", value: "Deutsch · Englisch" },
+    { label: "Sprachen", value: "Deutsch" },
   ],
 }: HeroProps) {
   return (
@@ -110,17 +110,13 @@ export function Hero({
             className="col-span-12 mt-2"
           >
             <div className="h-px bg-ivory/20" />
-            <dl className="mt-5 grid grid-cols-2 md:grid-cols-4 gap-x-6 gap-y-4">
+            <dl className="mt-5 grid grid-cols-2 md:grid-cols-3 gap-x-6 gap-y-4">
               {meta.map((m) => (
                 <div key={m.label} className="flex flex-col gap-1">
                   <dt className="label text-ivory/55">{m.label}</dt>
                   <dd className="text-[14px] text-ivory/90 font-medium">{m.value}</dd>
                 </div>
               ))}
-              <div className="flex flex-col gap-1 md:text-right">
-                <dt className="label text-ivory/55">Nummer</dt>
-                <dd className="text-[14px] text-ivory/90 font-medium tabular-nums">001 / 001</dd>
-              </div>
             </dl>
           </motion.div>
         </div>
