@@ -34,35 +34,28 @@ export default function KontaktPage() {
           </div>
 
           <div className="grid grid-cols-12 gap-6 mt-24">
-            <div className="col-span-12 md:col-span-7">
-              <form className="flex flex-col gap-10">
-                <fieldset className="grid grid-cols-2 gap-x-8 gap-y-10">
-                  <Field label="Name" name="name" />
-                  <Field label="Organisation (optional)" name="org" />
-                  <Field label="E-Mail" name="email" type="email" />
-                  <Field label="Telefon (optional)" name="phone" />
-                </fieldset>
+            <div className="col-span-12 md:col-span-7 flex flex-col gap-10">
+              <h2 className="display-3 text-navy">Schreiben Sie mir eine E-Mail.</h2>
+              <p className="prose-editorial">
+                <span>
+                  Am einfachsten erreichen Sie mich direkt per E-Mail. Schildern Sie in
+                  ein paar Zeilen, worum es geht — ich melde mich in der Regel innerhalb
+                  eines Tages zurück, um ein erstes Gespräch zu vereinbaren.
+                </span>
+              </p>
 
-                <label className="flex flex-col gap-3">
-                  <span className="label text-navy/60">Worum geht es?</span>
-                  <textarea
-                    name="message"
-                    rows={6}
-                    className="bg-transparent border-b border-navy/30 focus:border-navy outline-none py-2 text-[16px] text-navy placeholder:text-navy/30 resize-none transition-colors"
-                    placeholder="Kurze Situationsbeschreibung, falls möglich."
-                  />
-                </label>
-
-                <div className="flex items-center justify-between flex-wrap gap-4">
-                  <span className="label text-navy/50 max-w-xs">
-                    Ihre Angaben werden vertraulich behandelt und nicht weitergegeben.
-                  </span>
-                  <button type="submit" className="btn-magnetic on-ivory">
-                    <span className="label">Anfrage senden</span>
-                    <ArrowUpRight size={16} strokeWidth={1.5} />
-                  </button>
-                </div>
-              </form>
+              <div className="flex items-center justify-between flex-wrap gap-4">
+                <span className="label text-navy/50 max-w-xs">
+                  Ihre Angaben werden vertraulich behandelt und nicht weitergegeben.
+                </span>
+                <Link
+                  href="mailto:kontakt@karenbestmann.de?subject=Anfrage%20%C3%BCber%20die%20Website"
+                  className="btn-magnetic on-ivory"
+                >
+                  <span className="label">E-Mail schreiben</span>
+                  <ArrowUpRight size={16} strokeWidth={1.5} />
+                </Link>
+              </div>
             </div>
 
             <aside className="col-span-12 md:col-span-4 md:col-start-9 flex flex-col gap-10">
@@ -109,27 +102,5 @@ export default function KontaktPage() {
         ]}
       />
     </>
-  );
-}
-
-function Field({
-  label,
-  name,
-  type = "text",
-}: {
-  label: string;
-  name: string;
-  type?: string;
-}) {
-  return (
-    <label className="flex flex-col gap-3 col-span-2 md:col-span-1">
-      <span className="label text-navy/60">{label}</span>
-      <input
-        name={name}
-        type={type}
-        className="bg-transparent border-b border-navy/30 focus:border-navy outline-none py-2 text-[16px] text-navy placeholder:text-navy/30 transition-colors"
-        autoComplete="off"
-      />
-    </label>
   );
 }
